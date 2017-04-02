@@ -1,0 +1,7 @@
+:concurrency: 1
+
+:my-sidekiq-extension:
+  class:
+    - HelloWorld
+    - WhatTimeIsIt
+  interval_sec: 5

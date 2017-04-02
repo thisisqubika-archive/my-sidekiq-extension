@@ -1,0 +1,5 @@
+en:
+  my-stats-title: MySidekiqExtension Stats
+  job_class: Job
+  counter: Counter
+  last_ts: Last execution time

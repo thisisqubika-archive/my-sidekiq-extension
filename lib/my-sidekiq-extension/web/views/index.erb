@@ -1,0 +1,23 @@
+<h3><%= t('my-stats-title') %></h3>
+
+<div class="table_container">
+  <table class="table table-hover table-bordered table-striped table-white">
+    <thead>
+      <tr>
+        <th><%= t('job_class') %></th>
+        <th><%= t('counter') %></th>
+        <th><%= t('last_ts') %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @my_stats[:counters].each do |job_class, counter| %>
+        <tr>
+          <td><%= job_class %></td>
+          <td><%= counter %></td>
+          <td><%= Time.at(@my_stats[:timestamps][job_class].to_i) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
